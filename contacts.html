@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакты — CodeStart</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar is-light is-fixed-top">
+      <div class="container">
+        <div class="navbar-brand">
+          <a href="index.html" class="navbar-item has-text-weight-bold">
+            CodeStart
+          </a>
+        </div>
+        <div class="navbar-menu">
+          <div class="navbar-end">
+            <a href="index.html" class="navbar-item">Главная</a>
+            <a href="contacts.html" class="navbar-item is-active">Контакты</a>
+            <a href="faq.html" class="navbar-item">FAQ</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="section" style="margin-top: 80px">
+      <div class="container">
+        <h2 class="title is-2">Свяжитесь с нами</h2>
+
+        <div class="columns">
+          <div class="column is-6">
+            <form>
+              <div class="field">
+                <label class="label">Имя</label>
+                <input class="input" type="text" required />
+              </div>
+
+              <div class="field">
+                <label class="label">Email</label>
+                <input class="input" type="email" required />
+              </div>
+
+              <div class="field">
+                <label class="label">Тема</label>
+                <div class="select is-fullwidth">
+                  <select required>
+                    <option disabled selected>Выберите тему</option>
+                    <option>Вопрос</option>
+                    <option>Сотрудничество</option>
+                    <option>Отзыв</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label">Сообщение</label>
+                <textarea class="textarea" required></textarea>
+              </div>
+
+              <div class="field">
+                <label class="checkbox">
+                  <input type="checkbox" required />
+                  Согласен на обработку данных
+                </label>
+              </div>
+
+              <div class="field">
+                <button class="button is-primary">Отправить</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="column is-6">
+            <h3 class="title is-4">Контакты</h3>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> Москва, ул. Ленина, 10
+            </p>
+            <p><i class="fas fa-phone"></i> +7 (999) 111-22-33</p>
+            <p><i class="fas fa-envelope"></i> info@codestart.ru</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p><strong>CodeStart</strong></p>
+        <p>© 2025 Все права защищены</p>
+      </div>
+    </footer>
+  </body>
+</html>
